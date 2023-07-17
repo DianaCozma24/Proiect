@@ -127,6 +127,7 @@ logOutBtn.addEventListener('click', (e)=>{
   e.preventDefault();
   const logStatus = localStorage.getItem('esteLogat');
   document.querySelector('.logout').style.display = "none";
+  document.querySelector('.welcomeTxt').style.display = "none";
 if(logStatus == '0'){
   const login = document.createElement('button');
   const anchor = document.createElement('a');

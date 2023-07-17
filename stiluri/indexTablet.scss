@@ -19,7 +19,7 @@
         img {
           position: relative;
           align-items: left;
-          left: -200px;
+          left: -80px;
         }
       }
 
@@ -36,8 +36,8 @@
 
     hr {
       background: #FFFFFF;
-    mix-blend-mode: normal;
-    opacity: 0.1;
+      mix-blend-mode: normal;
+      opacity: 0.1;
       height: 1px;
       width: 689px;
     }
@@ -344,13 +344,15 @@
 
 
       }
-      .prodEarphones{
+
+      .prodEarphones {
         width: 339px;
         height: 320px;
         background-color: #F1F1F1;
         border-radius: 8px;
         margin-top: 0;
-        button{
+
+        button {
           top: 171px;
           left: 380px;
           margin-top: 30px;
@@ -362,7 +364,7 @@
   }
 
   .bestAudio {
-    
+
     width: 689px;
     height: 633px;
     top: 2658px;
@@ -377,17 +379,17 @@
       border-radius: 8px;
       width: 689px;
       height: 300px;
-      
+
     }
 
     .innerContainer {
-     width: 573px;
-     height: 270px;
-     top: 60px;
-     position: absolute;
-     display: flex;
+      width: 573px;
+      height: 270px;
+      top: 60px;
+      position: absolute;
+      display: flex;
 
-      
+
 
       h3 {
         width: 573px;
@@ -413,7 +415,7 @@
         color: $black;
         mix-blend-mode: normal;
         opacity: 0.5;
-        
+
       }
     }
 
@@ -428,7 +430,7 @@
         position: relative;
         align-items: left;
         left: -250px;
-        
+
       }
     }
 
@@ -436,23 +438,23 @@
       background-color: $black;
       width: 768px;
       height: 400px;
-      
+
 
     }
 
     nav {
-      
+
       ul {
-       
+
         list-style: none;
-        
+
         li {
           position: relative;
           display: inline;
           justify-content: space-evenly;
-         padding-right: 30px;
-         padding-top: 32px;
-         left: -120px;
+          padding-right: 30px;
+          padding-top: 32px;
+          left: -120px;
 
 
           a {
@@ -470,6 +472,7 @@
         }
       }
     }
+
     p {
       width: 689px;
       height: 75px;
@@ -482,11 +485,13 @@
       padding-bottom: 40px;
       text-align: left;
     }
-    .copyRight{
+
+    .copyRight {
       position: relative;
       justify-self: left;
       left: -15px;
-  }
+    }
+
     .social {
       position: relative;
       margin-top: 15px;
@@ -501,5 +506,3 @@
     }
   }
 }
-
-

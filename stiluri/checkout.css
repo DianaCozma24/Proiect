@@ -1,0 +1,537 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Manrope:wght@700&display=swap");
+h1, h2, p, h3, h4, button {
+  font-style: normal;
+  font-family: "Manrope";
+}
+
+body {
+  background-color: #FAFAFA;
+  color: black;
+  font-family: "Manrope";
+  width: 375px;
+  margin: 50px auto;
+}
+
+.hero {
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  width: 375px;
+  height: 92px;
+  margin: 50px auto;
+}
+.hero header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding: 30px;
+}
+.hero nav {
+  display: none;
+}
+.hero button {
+  background-color: transparent;
+  border: none;
+}
+.hero button #cart {
+  position: relative;
+  display: flex;
+  right: 10px;
+  font-size: 10px;
+  color: #FFFFFF;
+}
+.hero .signin {
+  position: relative;
+  color: #FFFFFF;
+  font-family: "Manrope";
+  font-size: 15px;
+  left: 40%;
+}
+.hero .signin a {
+  color: white;
+  text-decoration: none;
+}
+.hero .logBtn {
+  position: relative;
+  font-family: "Manrope";
+  color: #FFFFFF;
+  font-size: 15px;
+  left: 30%;
+}
+.hero .logBtn a {
+  color: white;
+  text-decoration: none;
+}
+.hero .logBtn .welcomeTxt {
+  font-family: "Manrope";
+  color: #FFFFFF;
+  font-size: 15px;
+  left: 30%;
+}
+.hero hr {
+  background-color: rgb(29, 28, 28);
+}
+
+.checkOut {
+  margin: 50px auto;
+  width: 327px;
+}
+
+.checkOut form {
+  margin: auto;
+  width: 327px;
+  height: 1378px;
+  border-radius: 5px;
+  background: #FFFFFF;
+  border: 1px solid #D87D4A;
+}
+
+h1 {
+  color: black;
+  text-align: left;
+  font-family: Manrope;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 40px 24px;
+}
+
+h4 {
+  color: #D87D4A;
+  font-family: Manrope;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0.929px;
+  text-transform: uppercase;
+  margin: 10px 24px;
+}
+
+.checkOut form label {
+  color: #000;
+  font-family: Manrope;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.214px;
+  padding-left: 20px;
+}
+.checkOut form input[type=userName] {
+  width: 280px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #CFCFCF;
+  background: #FFF;
+  color: black;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  opacity: 0.400000006;
+  margin: 10px 24px;
+}
+.checkOut form input[type=email] {
+  width: 280px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #CFCFCF;
+  background: #FFF;
+  color: black;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  opacity: 0.400000006;
+  margin: 10px 24px;
+}
+.checkOut form input[type=phoneNr] {
+  width: 280px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #CFCFCF;
+  background: #FFF;
+  color: black;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  opacity: 0.400000006;
+  margin: 10px 24px;
+}
+.checkOut form input[type=adress] {
+  width: 280px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #CFCFCF;
+  background: #FFF;
+  color: black;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  opacity: 0.400000006;
+  margin: 10px 24px;
+}
+.checkOut form input[type=adress] {
+  width: 280px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #CFCFCF;
+  background: #FFF;
+  color: black;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  opacity: 0.400000006;
+  margin: 10px 24px;
+}
+.checkOut form input[type=zipCode] {
+  width: 280px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #CFCFCF;
+  background: #FFF;
+  color: black;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  opacity: 0.400000006;
+  margin: 10px 24px;
+}
+.checkOut form input[type=zipCode] {
+  width: 280px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #CFCFCF;
+  background: #FFF;
+  color: black;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  opacity: 0.400000006;
+  margin: 10px 24px;
+}
+.checkOut form input[type=userCity] {
+  width: 280px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #CFCFCF;
+  background: #FFF;
+  color: black;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  opacity: 0.400000006;
+  margin: 10px 24px;
+}
+.checkOut form input[type=userContry] {
+  width: 280px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #CFCFCF;
+  background: #FFF;
+  color: black;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  opacity: 0.400000006;
+  margin: 10px 24px;
+}
+.checkOut form .radioDiv {
+  width: 280px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #CFCFCF;
+  text-align: left;
+  margin-top: 20px;
+  color: black;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  margin: 10px 24px;
+}
+.checkOut form input[type=eMoneyNr] {
+  width: 280px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #CFCFCF;
+  background: #FFF;
+  color: black;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  opacity: 0.400000006;
+  margin: 10px 24px;
+}
+.checkOut form input[type=eMoneyPin] {
+  width: 280px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #CFCFCF;
+  background: #FFF;
+  color: black;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  opacity: 0.400000006;
+  margin: 10px 24px;
+}
+.checkOut form input[type=submit] {
+  width: 279px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #CFCFCF;
+  background: #D87D4A;
+  color: #FFFFFF;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-left: 24px;
+  margin-top: 50px;
+}
+
+.Cart-Container {
+  width: 327px;
+  height: 612px;
+  position: relative;
+  margin: 50px auto;
+  flex-shrink: 0;
+  background-color: #FFFFFF;
+  border: 1px solid #D87D4A;
+  border-radius: 8px;
+}
+.Cart-Container .Header {
+  margin: auto;
+  width: 313px;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+.Cart-Container .Header .Heading {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: 1.286px;
+  text-transform: uppercase;
+  color: black;
+}
+.Cart-Container .Header .Action {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+  font-size: 15px;
+  text-decoration-line: underline;
+  color: black;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.Cart-Container .Cart-Items {
+  margin: auto;
+  width: 90%;
+  height: 30%;
+  z-index: 3;
+  display: flex;
+}
+.Cart-Container .Cart-Items .img {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  margin: 10px;
+  padding-top: 30px;
+}
+.Cart-Container .Cart-Items .title {
+  color: #000;
+  font-size: 12px;
+  font-family: Manrope;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-top: 10px;
+}
+.Cart-Container .Cart-Items .price {
+  color: #000;
+  font-size: 14px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  opacity: 0.5;
+  padding-top: 60px;
+  padding-right: 80px;
+}
+.Cart-Container .container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  position: relative;
+  left: -30%;
+  padding-top: 40px;
+  cursor: pointer;
+}
+.Cart-Container .container .wrapper {
+  width: 96px;
+  height: 32px;
+  background-color: #F1F1F1;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.Cart-Container .container .wrapper .minus .plus {
+  color: #979797;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.Cart-Container .container .wrapper .num {
+  color: black;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.totalContainer {
+  display: flex;
+  position: absolute;
+  height: 25px;
+  width: 400px;
+  left: 39%;
+  top: 2000px;
+  justify-content: space-between;
+}
+.totalContainer .total {
+  color: black;
+  font-size: 18px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 700;
+  width: 64px;
+}
+
+input[type=submit] {
+  width: 279px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #CFCFCF;
+  background: #D87D4A;
+  color: #FFFFFF;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  position: absolute;
+  top: 2060px;
+  left: 39%;
+  margin-left: 24px;
+  margin-top: 50px;
+}
+
+footer {
+  position: absolute;
+  top: 2274px;
+}
+footer .container {
+  background-color: black;
+  width: 375px;
+  height: 654px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  padding-top: 52px;
+}
+footer nav ul {
+  flex-direction: column;
+  list-style: none;
+  padding-top: 48px;
+  display: inline-block;
+  left: 134px;
+  align-items: center;
+}
+footer nav ul li {
+  text-align: center;
+}
+footer nav ul a {
+  text-align: center;
+  justify-content: center;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+footer p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  /* or 167% */
+  text-align: center;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+footer .social {
+  margin-top: 15px;
+  width: 150px;
+  display: flex;
+  gap: 15px;
+}/*# sourceMappingURL=checkout.css.map */

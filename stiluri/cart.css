@@ -5,23 +5,83 @@ h1, h2, p, h3, h4, button {
 }
 
 body {
-  margin: 0;
-  padding: 0;
   background-color: #FAFAFA;
   color: black;
   font-family: "Manrope";
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 375px;
+  margin: 50px auto;
+}
+body .hero {
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  width: 375px;
+  height: 92px;
+  position: relative;
+}
+body .hero header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding: 30px;
+}
+body .hero nav {
+  display: none;
+}
+body .hero button {
+  background-color: transparent;
+  border: none;
+}
+body .hero button #cart {
+  position: relative;
+  display: flex;
+  right: 10px;
+  font-size: 10px;
+  color: #FFFFFF;
+}
+body .hero .signin {
+  position: relative;
+  color: #FFFFFF;
+  font-family: "Manrope";
+  font-size: 15px;
+  left: 40%;
+}
+body .hero .signin a {
+  color: white;
+  text-decoration: none;
+}
+body .hero .logBtn {
+  position: relative;
+  font-family: "Manrope";
+  color: #FFFFFF;
+  font-size: 15px;
+  left: 10%;
+}
+body .hero .logBtn a {
+  color: white;
+  text-decoration: none;
+}
+body .hero .logBtn .welcomeTxt {
+  font-family: "Manrope";
+  color: #FFFFFF;
+  font-size: 15px;
+  left: 30%;
+}
+body .hero hr {
+  display: none;
 }
 body .Cart-Container {
-  width: 377px;
+  width: 327px;
   height: 488px;
   flex-shrink: 0;
   background-color: #FFFFFF;
   border-radius: 20px;
   right: -10%;
+  margin: 50px auto;
 }
 body .Cart-Container .Header {
   margin: auto;
@@ -127,14 +187,15 @@ body .Cart-Container .container .wrapper .num {
   line-height: 18px;
 }
 body .totalContainer {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  bottom: -120%;
+  display: inline-block;
+  position: absolute;
+  z-index: 2;
+  top: 550px;
+  left: 20%;
   justify-content: space-between;
 }
 body .totalContainer .totalSum {
-  bottom: -140%;
+  top: 10%;
 }
 body .totalContainer .total {
   color: black;
@@ -142,7 +203,6 @@ body .totalContainer .total {
   font-family: Manrope;
   font-style: normal;
   font-weight: 700;
-  position: absolute;
   width: 64px;
   height: 25px;
 }
@@ -158,6 +218,53 @@ body .totalContainer .total {
   font-weight: 700;
   text-transform: uppercase;
   position: relative;
-  top: 50%;
-  left: 15%;
+  top: 20%;
+  left: -25%;
+}
+
+footer {
+  position: absolute;
+  top: 600px;
+}
+footer .container {
+  background-color: black;
+  width: 375px;
+  height: 654px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  padding-top: 52px;
+}
+footer nav ul {
+  flex-direction: column;
+  list-style: none;
+  padding-top: 48px;
+  display: inline-block;
+  align-items: center;
+}
+footer nav ul li {
+  text-align: center;
+}
+footer nav ul li a {
+  color: #FFFFFF;
+}
+footer p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  position: relative;
+  top: 160px;
+}
+footer .social {
+  margin-top: 15px;
+  width: 150px;
+  display: flex;
+  gap: 15px;
+  position: relative;
+  top: 200px;
 }/*# sourceMappingURL=cart.css.map */

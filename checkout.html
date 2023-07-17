@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+
+  <link rel="stylesheet" href="stiluri/checkout.css" />
+  <script async src="JS/checkout.js"></script>
+</head>
+
+<body>
+  <section class="hero">
+    <div class="container">
+      <header>
+        <button class="hamburger">
+          <img src="Audiophile/icon-hamburger.svg" alt="hamburger" />
+        </button>
+        <a href="/"><img src="Audiophile/audiophile2.svg" alt="audiophile logo" /></a>
+
+        <button class="cart">
+         <a href="cart.html"><img src="Audiophile/cart.svg" alt="cart" /></a> 
+        </button>
+          <!-- <p id="cart">0</p>   -->
+      <button class="signin"><a href="register.html">Register</a></button>
+       <div class="logBtn"></div> 
+      <!-- <button class="login"><a href="login.html">Login</a></button> -->
+        
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="headphones.html">Headphones</a></li>
+            <li><a href="speakers.html">Speakers</a></li>
+            <li><a href="earphones.html">Earphones</a></li>
+          </ul>
+        </nav>
+      </header>
+      <hr>
+
+  <div class="checkOut">
+    <form name='form'>
+
+      <h1>CHECKOUT</h1>
+
+
+      <h4> Billing info</h4>
+
+      <label for="userName">Name:</label>
+      <input type="userName" id="userName" placeholder="Username" required>
+
+
+      <label for="userEmail">Email:</label>
+      <input type="email" id="userEmail" placeholder="Email" required>
+
+      <label for="userPhone">Phone Number:</label>
+      <input type="phoneNr" id="userPhone" placeholder="Phone Number" required>
+
+      <h4>Shipping info</h4>
+
+      <label for="userAdress">Your Address:</label>
+      <input type="adress" id="userAdress" placeholder="Adress" required>
+
+      <label for="zipCode">ZIP Code:</label>
+      <input type="zipCode" id="zipCode" placeholder="Zip Code" required>
+
+      <label for="userCity">City:</label>
+      <input type="userCity" id="userCity" placeholder="City" required>
+
+      <label for="userContry">Contry:</label>
+      <input type="userContry" id="userContry" placeholder="Contry" required>
+
+      <h4>Payment details</h4>
+
+      <div class="radioDiv">
+        <input type="radio" id="eMoney" name="payment" value="eMoney">
+        <label for="eMoney">e-Money</label>
+      </div><br>
+      <div class="radioDiv">
+        <input type="radio" id="delivery" name="payment" value="delivery">
+        <label for="delivery">Cash on Delivery</label>
+      </div>
+
+      <label for="eMoneyNr">e-Money Number:</label>
+      <input type="eMoneyNr" id="eMoneyNr" placeholder="e-Money Number" required>
+
+      <label for="eMoneyPin">e-Money Pin:</label>
+      <input type="eMoneyPin" id="eMoneyPin" placeholder="e-Money Pin" required>
+
+     
+
+    </form>
+  </div>
+
+  <div class="Cart-Container">
+    <section class="Header">
+      <h3 class="Heading">SUMMARY</h3>
+    </section>
+    <div class="cartProducts">
+      <!-- <div class="container"> -->
+        <!-- <div class="wrapper">
+          <span class="minus">-</span>
+          <span class="num">1</span>
+          <span class="plus">+</span>
+        </div> -->
+    
+      <!-- </div> -->
+    </div>
+  </div>
+
+  
+  <div class="totalContainer">
+    <div class="totalSum">Total: <p class="total"> </p>
+    </div>
+  </div>
+
+  
+  <a href="index.html"></a><input id="login_btn" type="submit" value="Continue & Pay" onclick="check()"></a>
+  <footer>
+    <div class="container">
+        <a href="/"><img src="Audiophile/audiophile2.svg" alt="audiophile logo" /></a>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Headphones</a></li>
+            <li><a href="speakers.html">Speakers</a></li>
+            <li><a href="#">Earphones</a></li>
+          </ul>
+        </nav>
+      <p>Audiophile is an all in one stop to fulfill your 
+        audio needs. We're a small team of music 
+        lovers and sound specialists who are devoted 
+        to helping you get the most out of personal 
+        audio. Come and visit our demo facility - we’re 
+        open 7 days a week.</p>
+        <p class="copyRight">
+          @Copyright 2021. All right reserved.
+        </p>
+        <ul class="social">
+          <li><a href="#">
+            <img src="Audiophile/assets/Group30.png" alt="facebook">
+          </a></li>
+         
+        </ul>
+  </footer>
+
+</body>
+
+</html>

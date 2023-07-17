@@ -8,39 +8,43 @@ body {
   background-color: #FAFAFA;
   color: black;
   font-family: "Manrope";
-  margin: 0;
+  width: 350px;
+  margin: 50px auto;
 }
-
-p {
+body p {
   line-height: 1.5em;
 }
-
-h1 {
+body h1 {
   color: black;
   text-align: center;
   margin-bottom: 50px;
 }
-
-after {
+body after {
   clear: both;
 }
-
-.loginDiv {
+body .loginDiv {
   margin: 50px auto;
-  width: 320px;
+  width: 327px;
 }
-
-.loginDiv form {
+body .loginDiv form label {
+  color: #000;
+  font-family: Manrope;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.214px;
+}
+body .loginDiv form {
   margin: auto;
   padding: 22px 22px 22px 22px;
-  width: 400px;
+  width: 327px;
   height: 600px;
   border-radius: 5px;
   background: #FFFFFF;
   border: 1px solid #D87D4A;
 }
-
-.loginDiv form input[type=email] {
+body .loginDiv form input[type=email] {
   background-color: #FFFFFF;
   border-radius: 8px;
   border: 1px solid #CFCFCF;
@@ -54,16 +58,14 @@ after {
   width: 280px;
   height: 56px;
 }
-
-.emapas {
+body .emapas {
   color: #000;
   font-size: 14px;
   font-family: Manrope;
   font-weight: 700;
   letter-spacing: -0.214px;
 }
-
-.loginDiv form input[type=password] {
+body .loginDiv form input[type=password] {
   background-color: #FFFFFF;
   border-radius: 8px;
   border: 1px solid #CFCFCF;
@@ -77,14 +79,14 @@ after {
   width: 280px;
   height: 56px;
 }
-
-.loginDiv form input[type=submit] {
+body .loginDiv form input[type=submit] {
   background: #D87D4A;
   border: 0;
   width: 280px;
   height: 56px;
   position: relative;
-  left: 15%;
+  left: 10%;
+  top: 15%;
   border-radius: 3px;
   color: #FFF;
   text-align: center;
@@ -94,10 +96,8 @@ after {
   letter-spacing: 1px;
   text-transform: uppercase;
   cursor: pointer;
-  transition: background 0.3s ease-in-out;
 }
-
-.loginDiv form span {
+body .loginDiv form span {
   background-color: #363b41;
   border-radius: 3px 0px 0px 3px;
   border-right: 3px solid #434a52;
@@ -109,12 +109,10 @@ after {
   width: 50px;
   height: 50px;
 }
-
-#remember {
+body #remember {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
-#login form input[type=submit]:hover {
+body #login form input[type=submit]:hover {
   background: #16aa56;
 }/*# sourceMappingURL=login.css.map */

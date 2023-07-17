@@ -21,7 +21,7 @@ h1, h2, p, h3, h4, button {
   .hero header a img {
     position: relative;
     align-items: left;
-    left: -200px;
+    left: -80px;
   }
   .hero nav {
     display: none;
