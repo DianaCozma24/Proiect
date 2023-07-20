@@ -33,6 +33,58 @@
       background-color: transparent;
       border: none;
     }
+    .imgCart{
+      position: absolute;
+      left: 500px;
+      top: 42px;
+    }
+    .signin {
+      
+      color: $white;
+      font-family: 'Manrope';
+      font-size: 9px;
+      right: 30px;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+
+    .logBtn {
+      
+      font-family: 'Manrope';
+      color: $white;
+      font-size: 9px;
+     right: 15px;
+
+     .logout{
+      font-size: 8px;
+      font-family: 'Manrope';
+    left: 610px;
+    top: 44px;
+      position: absolute;
+      z-index: 2;
+     }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      .welcomeTxt{
+        font-family: 'Manrope';
+        color: $white;
+        font-size: 9px;
+        left: 430px;
+        top: 10px;
+      }
+    }
+.login{
+  font-family: 'Manrope';
+  font-size: 9px;
+  position: absolute;
+  left: 610px;
+  top: 44px;
+}
 
     hr {
       background: #FFFFFF;

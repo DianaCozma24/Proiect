@@ -2,7 +2,9 @@
 <html lang="en">
   <head>
     <title>Home</title>
-    <link rel="stylesheet" href="stiluri/headphones.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stiluri/headphones.css" media="screen and (min-width: 350px)"/>
+    <!-- <link rel="stylesheet" href="stiluri/headphones.css" /> -->
     <script async src="JS/headphones.js"></script>
   </head>
   <body>
@@ -10,12 +12,12 @@
       <div class="container">
         <header>
           <button class="hamburger">
-            <img src="Audiophile/icon-hamburger.svg" alt="hamburger" />
+            <img class="imgHmg" src="Audiophile/icon-hamburger.svg" alt="hamburger" />
           </button>
-          <a href="/"><img src="Audiophile/audiophile2.svg" alt="audiophile logo" /></a>
+          <a href="/"><img class="imgLogo" src="Audiophile/audiophile2.svg" alt="audiophile logo" /></a>
   
           <button class="cart">
-            <img src="Audiophile/cart.svg" alt="cart" />
+            <img class="imgCart" src="Audiophile/cart.svg" alt="cart" />
             <p id="cart">0</p> 
           </button>
           <nav>
@@ -31,7 +33,16 @@
   
         <h2>HEADPHONES</h2>
       </section>
-      
+      <div class="list-container">
+        <div class="filters">
+            Filters
+            <div>
+                <label for="search">Search:</label>
+                <input type="text" id="search" name="search" />
+                <button id="searchButton">Search</button>
+            </div>
+        </div>
+        <div>
       <div class ="product-listHeadphones">
 
       </div>

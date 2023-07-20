@@ -1,331 +1,344 @@
 @import "typo";
 @import "colors";
 
-body {
-  background-color: #FAFAFA;
-  color: $black;
-  font-family: 'Manrope';
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 375px;
-  margin: 50px auto;
-
-  .hero {
-    background-color: $black;
-    background-position: center;
-    background-size: cover;
+@media screen and (min-width: 350px) {
+  body {
+    background-color: #FAFAFA;
+    color: $black;
+    font-family: 'Manrope';
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 375px;
-    height: 92px;
-    position: relative;
+    margin: 50px auto;
 
-    header {
-      display: flex;
+    .hero {
+      background-color: $black;
+      background-position: center;
+      background-size: cover;
+      width: 375px;
+      height: 92px;
+      position: relative;
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        padding: 30px;
+
+      }
+
+      nav {
+        display: none;
+      }
+
+      button {
+        background-color: transparent;
+        border: none;
+
+        #cart {
+          position: relative;
+          display: flex;
+          right: 10px;
+          font-size: 10px;
+          color: $white;
+        }
+      }
+
+      .signin {
+        position: relative;
+        color: $white;
+        font-family: 'Manrope';
+        font-size: 15px;
+        left: 40%;
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+
+      .logBtn {
+        position: relative;
+        font-family: 'Manrope';
+        color: $white;
+        font-size: 15px;
+        left: 10%;
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
+
+        .welcomeTxt {
+          font-family: 'Manrope';
+          color: $white;
+          font-size: 15px;
+          left: 30%;
+        }
+      }
+
+      hr {
+        display: none;
+      }
+    }
+
+    .Cart-Container {
+      width: 327px;
+      height: 488px;
+      flex-shrink: 0;
+      background-color: $white;
+      border-radius: 20px;
+      right: -10%;
+      margin: 50px auto;
+
+      .Header {
+        margin: auto;
+        width: 313px;
+        height: 25px;
+        display: flex;
+        justify-content: space-between;
+        gap: 5px;
+
+
+        .Heading {
+
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: normal;
+          letter-spacing: 1.286px;
+          text-transform: uppercase;
+          color: $black;
+        }
+
+        .Action {
+
+
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 500;
+          line-height: 25px;
+          font-size: 15px;
+          text-decoration-line: underline;
+          color: $black;
+          mix-blend-mode: normal;
+          opacity: 0.5;
+          cursor: pointer;
+        }
+      }
+
+      .Cart-Items {
+        margin: auto;
+        width: 90%;
+        height: 30%;
+        z-index: 3;
+        display: flex;
+
+
+
+        .img {
+          width: 64px;
+          height: 64px;
+          flex-shrink: 0;
+          border-radius: 8px;
+          margin: 10px;
+          padding-top: 30px;
+
+
+        }
+
+
+
+        .title {
+          color: #000;
+          font-size: 15px;
+          font-family: Manrope;
+          font-style: normal;
+          text-transform: uppercase;
+          font-weight: 700;
+          line-height: 25px;
+          padding-bottom: 0;
+          padding-top: 30px;
+
+        }
+
+        .price {
+
+          color: #000;
+          font-size: 14px;
+          font-family: Manrope;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 25px;
+          opacity: 0.5;
+          position: relative;
+          bottom: -40%;
+          left: -10%;
+        }
+      }
+
+      .container {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding-left: 30px;
+        padding-top: 40px;
+        cursor: pointer;
+
+
+        .wrapper {
+          width: 96px;
+          height: 32px;
+          background-color: #F1F1F1;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          text-align: center;
+
+
+
+          .minus .plus {
+            color: #979797;
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 18px;
+            text-align: center;
+            letter-spacing: 1px;
+          }
+
+          .num {
+            color: $black;
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 13px;
+            line-height: 18px;
+          }
+        }
+
+      }
+
+    }
+
+
+    .totalContainer {
+      display: inline-block;
+      position: absolute;
+      z-index: 2;
+      top: 450px;
+      left: 10%;
       justify-content: space-between;
+
+      .totalSum {
+        top: 10%;
+        // left: -80%;
+        // bottom: -120%;
+      }
+
+      .total {
+        color: $black;
+        font-size: 18px;
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 700;
+
+        width: 64px;
+        height: 25px;
+
+      }
+
+    }
+  }
+
+  .checkout {
+
+
+    a {
+      background-color: $orange;
+      color: $white;
+      font-family: 'Manrope';
+      width: 271px;
+      height: 48px;
+      border: 1px solid $orange;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      position: absolute;
+      border-radius: 4px;
+      text-align: center;
+      top: 550px;
+      right: 15%;
+      z-index: 2;
+      text-decoration: none;
+      
+    }
+
+  }
+
+  footer {
+    position: absolute;
+    top: 600px;
+
+
+    .container {
+      background-color: $black;
+      width: 375px;
+      height: 654px;
+      display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 50px;
-      padding: 30px;
+      margin-top: 40px;
+      padding-top: 52px;
+
 
     }
 
     nav {
-      display: none;
-    }
-
-    button {
-      background-color: transparent;
-      border: none;
-
-      #cart {
-        position: relative;
-        display: flex;
-        right: 10px;
-        font-size: 10px;
-        color: $white;
-      }
-    }
-
-    .signin {
-      position: relative;
-      color: $white;
-      font-family: 'Manrope';
-      font-size: 15px;
-      left: 40%;
-
-      a {
-        color: white;
-        text-decoration: none;
-      }
-    }
-
-    .logBtn {
-      position: relative;
-      font-family: 'Manrope';
-      color: $white;
-      font-size: 15px;
-      left: 10%;
-
-      a {
-        color: white;
-        text-decoration: none;
-      }
-
-      .welcomeTxt {
-        font-family: 'Manrope';
-        color: $white;
-        font-size: 15px;
-        left: 30%;
-      }
-    }
-
-    hr {
-      display: none;
-    }
-  }
-
-  .Cart-Container {
-    width: 327px;
-    height: 488px;
-    flex-shrink: 0;
-    background-color: $white;
-    border-radius: 20px;
-    right: -10%;
-    margin: 50px auto;
-
-    .Header {
-      margin: auto;
-      width: 313px;
-      height: 25px;
-      display: flex;
-      justify-content: space-between;
-      gap: 5px;
-
-
-      .Heading {
-
-        font-family: 'Manrope';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: normal;
-        letter-spacing: 1.286px;
-        text-transform: uppercase;
-        color: $black;
-      }
-
-      .Action {
-
-
-        font-family: 'Manrope';
-        font-style: normal;
-        font-weight: 500;
-        line-height: 25px;
-        font-size: 15px;
-        text-decoration-line: underline;
-        color: $black;
-        mix-blend-mode: normal;
-        opacity: 0.5;
-        cursor: pointer;
-      }
-    }
-
-    .Cart-Items {
-      margin: auto;
-      width: 90%;
-      height: 30%;
-      z-index: 3;
-      display: flex;
-
-
-
-      .img {
-        width: 64px;
-        height: 64px;
-        flex-shrink: 0;
-        border-radius: 8px;
-        margin: 10px;
-        padding-top: 30px;
-
-
-      }
-
-
-
-      .title {
-        color: #000;
-        font-size: 15px;
-        font-family: Manrope;
-        font-style: normal;
-        text-transform: uppercase;
-        font-weight: 700;
-        line-height: 25px;
-        padding-bottom: 0;
-        padding-top: 30px;
-
-      }
-
-      .price {
-
-        color: #000;
-        font-size: 14px;
-        font-family: Manrope;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 25px;
-        opacity: 0.5;
-        position: relative;
-        bottom: -40%;
-        left: -10%;
-      }
-    }
-
-    .container {
-      display: flex;
-      flex-direction: row;
-      gap: 10px;
-      padding-left: 30px;
-      padding-top: 40px;
-      cursor: pointer;
-
-
-      .wrapper {
-        width: 96px;
-        height: 32px;
-        background-color: #F1F1F1;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        text-align: center;
-
-
-
-        .minus .plus {
-          color: #979797;
-          font-family: 'Manrope';
-          font-style: normal;
-          font-weight: 700;
-          font-size: 13px;
-          line-height: 18px;
-          text-align: center;
-          letter-spacing: 1px;
-        }
-
-        .num {
-          color: $black;
-          font-family: 'Manrope';
-          font-style: normal;
-          font-weight: 900;
-          font-size: 13px;
-          line-height: 18px;
-        }
-      }
-
-    }
-
-  }
-
-
-  .totalContainer {
-    display: inline-block;
-    position: absolute;
-    z-index: 2;
-    top: 550px;
-    left: 20%;
-    justify-content: space-between;
-
-    .totalSum {
-      top: 10%;
-      // left: -80%;
-      // bottom: -120%;
-    }
-
-    .total {
-      color: $black;
-      font-size: 18px;
-      font-family: Manrope;
-      font-style: normal;
-      font-weight: 700;
-
-      width: 64px;
-      height: 25px;
-
-    }
-
-  }
-}
-
-.checkout {
-  background-color: $orange;
-  color: $white;
-  font-family: 'Manrope';
-  width: 271px;
-  height: 48px;
-  border: 1px solid $orange;
-  font-size: 13px;
-  font-weight: 700;
-  text-transform: uppercase;
-  position: relative;
-  top: 20%;
-  left: -25%;
-}
-
-footer {
-  position: absolute;
-  top: 600px;
-
-
-  .container {
-    background-color: $black;
-    width: 375px;
-    height: 654px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 40px;
-    padding-top: 52px;
-
-
-  }
-
-  nav{
-    ul{
-      flex-direction: column;
+      ul {
+        flex-direction: column;
         list-style: none;
         padding-top: 48px;
         display: inline-block;
         align-items: center;
-      li{
-        text-align: center;
 
-        a{
-          color: $white;
+        li {
+          text-align: center;
+
+          a {
+            color: $white;
+          }
         }
       }
     }
+
+
+    p {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 25px;
+      text-align: center;
+      color: $white;
+      mix-blend-mode: normal;
+      opacity: 0.5;
+      position: relative;
+      top: 160px;
+    }
+
+    .social {
+      margin-top: 15px;
+      width: 150px;
+      display: flex;
+      gap: 15px;
+      position: relative;
+      top: 200px;
+
+
+    }
+
   }
-
-
-  p {
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 25px;
-    text-align: center;
-    color: $white;
-    mix-blend-mode: normal;
-    opacity: 0.5;
-    position: relative;
-    top: 160px;
-  }
-
-  .social {
-    margin-top: 15px;
-    width: 150px;
-    display: flex;
-    gap: 15px;
-    position: relative;
-    top: 200px;
-
-
-  }
-
 }

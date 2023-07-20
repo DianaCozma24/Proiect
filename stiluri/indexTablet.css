@@ -30,6 +30,53 @@ h1, h2, p, h3, h4, button {
     background-color: transparent;
     border: none;
   }
+  .hero .imgCart {
+    position: absolute;
+    left: 500px;
+    top: 42px;
+  }
+  .hero .signin {
+    color: #FFFFFF;
+    font-family: "Manrope";
+    font-size: 9px;
+    right: 30px;
+  }
+  .hero .signin a {
+    color: white;
+    text-decoration: none;
+  }
+  .hero .logBtn {
+    font-family: "Manrope";
+    color: #FFFFFF;
+    font-size: 9px;
+    right: 15px;
+  }
+  .hero .logBtn .logout {
+    font-size: 8px;
+    font-family: "Manrope";
+    left: 610px;
+    top: 44px;
+    position: absolute;
+    z-index: 2;
+  }
+  .hero .logBtn a {
+    color: white;
+    text-decoration: none;
+  }
+  .hero .logBtn .welcomeTxt {
+    font-family: "Manrope";
+    color: #FFFFFF;
+    font-size: 9px;
+    left: 430px;
+    top: 10px;
+  }
+  .hero .login {
+    font-family: "Manrope";
+    font-size: 9px;
+    position: absolute;
+    left: 610px;
+    top: 44px;
+  }
   .hero hr {
     background: #FFFFFF;
     mix-blend-mode: normal;

@@ -142,7 +142,7 @@ for (let index = 0; index < minusses.length; index++) {
 const remove = document.getElementById('action');
 remove.addEventListener('click', (e) => {
   e.preventDefault();
-  document.getElementById('Cart-Items').style.display = "none";
+  document.querySelector('.cartProducts').style.display = "none";
 
   localStorage.setItem('cart', []);
   localStorage.setItem('counter', 0);

@@ -4,261 +4,286 @@ h1, h2, p, h3, h4, button {
   font-family: "Manrope";
 }
 
-.hero {
-  background-color: black;
-  background-position: center;
-  background-size: cover;
-  width: 375px;
-  height: 192px;
-  position: relative;
-}
-.hero header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px;
-}
-.hero nav {
-  display: none;
-}
-.hero button {
-  background-color: transparent;
-  border: none;
-}
-.hero p {
-  top: 10px;
-  left: 80%;
-  font-size: 10px;
-  color: #FFFFFF;
-}
-.hero h2 {
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 38px;
-  text-align: center;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-}
-
-.product-listHeadphones {
-  display: flex;
-  flex-direction: column;
-  width: 375px;
-  margin-left: 24px;
-  margin-top: 64px;
-  gap: 120px;
-}
-.product-listHeadphones .card {
-  display: flex;
-  flex-direction: row;
-}
-.product-listHeadphones .card img {
-  width: 327px;
-  height: 352px;
-  border-radius: 8px;
-}
-.product-listHeadphones .card h3 {
-  width: 327px;
-  height: 76px;
-  left: 120px;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 38px;
-  text-transform: uppercase;
-  text-align: center;
-  color: black;
-}
-.product-listHeadphones .card p {
-  width: 327px;
-  height: 125px;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 25px;
-  text-align: center;
-  mix-blend-mode: normal;
-  opacity: 0.5;
-}
-.product-listHeadphones .card .seeProduct {
-  width: 160px;
-  height: 48px;
-  background-color: #D87D4A;
-  color: #FFFFFF;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 18px;
-  text-transform: uppercase;
-  border: 1px solid #D87D4A;
-  margin-top: 24px;
-  position: relative;
-  left: 25.38%;
-}
-
-.products {
-  position: absolute;
-  top: 2702px;
-  padding-top: 120px;
-  padding-bottom: 40px;
-}
-.products .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 80px;
-  margin-left: 24px;
-}
-.products .articleList {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-  align-items: center;
-}
-.products img {
-  position: relative;
-  left: 124px;
-  transform: translateY(-60%);
-  z-index: 2;
-  filter: drop-shadow(0px 10px 10px black);
-}
-.products article {
-  height: 165px;
-  width: 327px;
-  left: 0px;
-  top: 52px;
-  border-radius: 8px;
-  background-color: #F1F1F1;
-  display: flex;
-}
-.products article h3 {
-  text-transform: uppercase;
-  color: black;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 20px;
-  text-align: center;
-  letter-spacing: 1.07143px;
-  left: 133px;
-}
-.products article button {
-  height: 18px;
-  left: 135px;
-  top: 177px;
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 18px;
-  border: none;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: black;
-  mix-blend-mode: normal;
-  opacity: 0.5;
-}
-.products article .arrow {
-  color: #D87D4A;
-  font-size: 18px;
-}
-
-.bestAudio {
-  display: block;
-  position: absolute;
-  top: 3600px;
-  left: 24px;
-}
-.bestAudio .imgBackground {
-  background-image: url("../Audiophile/assets/men.png");
-  display: flex;
-  border: 1px solid black;
-  border-radius: 8px;
-  width: 327px;
-  height: 300px;
-}
-.bestAudio .innerContainer {
-  display: flex;
-  top: 3925px;
-}
-.bestAudio .innerContainer h3 {
-  position: absolute;
-  height: 76px;
-  left: 0%;
-  right: 0%;
-  top: calc(100% - 38px + 29px);
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 38px;
-  text-align: center;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: black;
-}
-.bestAudio .innerContainer p {
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: calc(100% + 55px + 29px);
-  bottom: 0%;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 25px;
-  text-align: center;
-  color: black;
-  mix-blend-mode: normal;
-  opacity: 0.5;
-  margin-top: 30px;
-}
-
-footer {
-  position: absolute;
-  top: 4323px;
-}
-footer .container {
-  background-color: black;
-  width: 375px;
-  height: 654px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 40px;
-  padding-top: 52px;
-}
-footer nav ul {
-  flex-direction: column;
-  list-style: none;
-  padding-top: 48px;
-  display: inline-block;
-  left: 134px;
-  align-items: center;
-}
-footer nav ul li {
-  text-align: center;
-}
-footer nav ul li a {
-  text-align: center;
-  justify-content: center;
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 25px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-}
-footer p {
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 25px;
-  /* or 167% */
-  text-align: center;
-  color: #FFFFFF;
-  mix-blend-mode: normal;
-  opacity: 0.5;
-}
-footer .social {
-  margin-top: 15px;
-  width: 150px;
-  display: flex;
-  gap: 15px;
+@media screen and (min-width: 350px) {
+  .hero {
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    width: 375px;
+    height: 192px;
+    position: relative;
+  }
+  .hero header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 30px;
+  }
+  .hero header img.imgHmg {
+    width: 10px;
+    height: 10px;
+  }
+  .hero header img.imgLogo {
+    width: 90px;
+    height: 20px;
+  }
+  .hero header img.imgCart {
+    width: 15px;
+    height: 15px;
+  }
+  .hero nav {
+    display: none;
+  }
+  .hero button {
+    background-color: transparent;
+    border: none;
+  }
+  .hero p {
+    top: 10px;
+    left: 80%;
+    font-size: 10px;
+    color: #FFFFFF;
+  }
+  .hero h2 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  .list-container {
+    padding-top: 20px;
+  }
+  .list-container #search {
+    width: 100px;
+    height: 20px;
+    border-radius: 5px;
+  }
+  .list-container #searchButton {
+    background-color: #D87D4A;
+    color: #FFFFFF;
+    border-radius: 3px;
+    font-family: "Manrope";
+  }
+  .product-listHeadphones {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    margin-left: 24px;
+    margin-top: 64px;
+    gap: 120px;
+  }
+  .product-listHeadphones .card {
+    display: flex;
+    flex-direction: row;
+  }
+  .product-listHeadphones .card img {
+    width: 327px;
+    height: 352px;
+    border-radius: 8px;
+  }
+  .product-listHeadphones .card h3 {
+    width: 327px;
+    height: 76px;
+    left: 120px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+  }
+  .product-listHeadphones .card p {
+    width: 327px;
+    height: 125px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  .product-listHeadphones .card .seeProduct {
+    width: 160px;
+    height: 48px;
+    background-color: #D87D4A;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    border: 1px solid #D87D4A;
+    margin-top: 24px;
+    position: relative;
+    left: 25.38%;
+  }
+  .products {
+    position: absolute;
+    top: 2702px;
+    padding-top: 120px;
+    padding-bottom: 40px;
+  }
+  .products .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    margin-left: 24px;
+  }
+  .products .articleList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+  }
+  .products img {
+    position: relative;
+    left: 124px;
+    transform: translateY(-60%);
+    z-index: 2;
+    filter: drop-shadow(0px 10px 10px black);
+  }
+  .products article {
+    height: 165px;
+    width: 327px;
+    left: 0px;
+    top: 52px;
+    border-radius: 8px;
+    background-color: #F1F1F1;
+    display: flex;
+  }
+  .products article h3 {
+    text-transform: uppercase;
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 1.07143px;
+    left: 133px;
+  }
+  .products article button {
+    height: 18px;
+    left: 135px;
+    top: 177px;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    border: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: black;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  .products article .arrow {
+    color: #D87D4A;
+    font-size: 18px;
+  }
+  .bestAudio {
+    display: block;
+    position: absolute;
+    top: 3600px;
+    left: 24px;
+  }
+  .bestAudio .imgBackground {
+    background-image: url("../Audiophile/assets/men.png");
+    display: flex;
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 327px;
+    height: 300px;
+  }
+  .bestAudio .innerContainer {
+    display: flex;
+    top: 3925px;
+  }
+  .bestAudio .innerContainer h3 {
+    position: absolute;
+    height: 76px;
+    left: 0%;
+    right: 0%;
+    top: calc(100% - 38px + 29px);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: black;
+  }
+  .bestAudio .innerContainer p {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: calc(100% + 55px + 29px);
+    bottom: 0%;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: black;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-top: 30px;
+  }
+  footer {
+    position: absolute;
+    top: 4323px;
+  }
+  footer .container {
+    background-color: black;
+    width: 375px;
+    height: 654px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    padding-top: 52px;
+  }
+  footer nav ul {
+    flex-direction: column;
+    list-style: none;
+    padding-top: 48px;
+    display: inline-block;
+    left: 134px;
+    align-items: center;
+  }
+  footer nav ul li {
+    text-align: center;
+  }
+  footer nav ul li a {
+    text-align: center;
+    justify-content: center;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  footer p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 167% */
+    text-align: center;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  footer .social {
+    margin-top: 15px;
+    width: 150px;
+    display: flex;
+    gap: 15px;
+  }
 }/*# sourceMappingURL=headphones.css.map */

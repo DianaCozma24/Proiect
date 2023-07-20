@@ -56,12 +56,64 @@
       }
     }
 
+    .imgCart{
+      top: 5px;
+    }
+    .signin {
+      position: absolute;
+      color: $white;
+      font-family: 'Manrope';
+      font-size: 9px;
+      right: 300px;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+
+    .logBtn {
+      
+      font-family: 'Manrope';
+      color: $white;
+      font-size: 9px;
+     right: 15px;
+
+     .logout{
+      font-size: 8px;
+      font-family: 'Manrope';
+      right: -350px;
+    top: 37px;
+      position: absolute;
+      z-index: 2;
+     }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      .welcomeTxt{
+        position: absolute;
+        font-family: 'Manrope';
+        color: $white;
+        font-size: 9px;
+        left: 1150px;
+        top: 1px;
+      }
+    }
+.login{
+  font-family: 'Manrope';
+  font-size: 9px;
+  position: absolute;
+  left: 1170px;
+  top: 37px;
+}
+
     .cart {
       img {
         background-color: transparent;
         position: relative;
         align-items: right;
-        left: 700px;
+        left: 600px;
       }
     }
 

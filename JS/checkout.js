@@ -155,3 +155,23 @@ function totalSum() {
 
 totalSum();
 
+
+const userEmail=document.getElementById('userEmail');
+console.log(userEmail);
+const logSts=localStorage.getItem('esteLogat');
+if(logSts=='1'){
+    const username=localStorage.getItem('userLogat');
+    userEmail.value=username;
+}
+
+
+let popup=document.getElementById("popup");
+
+function openPopup(){
+  popup.classList.add("openPopup");
+
+}
+
+function closePopup(){
+  popup.classList.remove("openPopup");
+}

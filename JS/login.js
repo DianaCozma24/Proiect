@@ -10,6 +10,7 @@ function check(){
       alert('You are logged in.');
       localStorage.setItem('esteLogat', '1');
       localStorage.setItem('userLogat', userName.value);
+      window.location = "index.html";
   }else{
       alert('Error on login');
   }

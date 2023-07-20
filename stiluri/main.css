@@ -47,11 +47,10 @@ h1, h2, p, h3, h4, button {
     color: #FFFFFF;
   }
   .hero .signin {
-    position: relative;
     color: #FFFFFF;
     font-family: "Manrope";
     font-size: 9px;
-    right: 5px;
+    right: 30px;
   }
   .hero .signin a {
     color: white;
@@ -64,10 +63,12 @@ h1, h2, p, h3, h4, button {
     right: 15px;
   }
   .hero .logBtn .logout {
-    font-size: 9px;
+    font-size: 8px;
     font-family: "Manrope";
-    left: 10%;
-    position: relative;
+    left: 305px;
+    top: 35px;
+    position: absolute;
+    z-index: 2;
   }
   .hero .logBtn a {
     color: white;
@@ -77,8 +78,15 @@ h1, h2, p, h3, h4, button {
     font-family: "Manrope";
     color: #FFFFFF;
     font-size: 9px;
-    left: 65%;
-    top: 20%;
+    left: 230px;
+    top: 1px;
+  }
+  .hero .login {
+    font-family: "Manrope";
+    font-size: 9px;
+    position: absolute;
+    left: 310px;
+    top: 35px;
   }
   .hero hr {
     background-color: rgb(29, 28, 28);

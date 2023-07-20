@@ -44,8 +44,13 @@ function createCardElement(id, imgUrl, imgAlt, productTitle, productDescription)
 }
 
 function generateListHeadphones(list){
+  console.log(list);
   const productListElementHeadphones = document.querySelector('.product-listHeadphones');
-  
+  const cards =document.querySelectorAll('.card');
+  for(let i=0; i<cards.length; i++){
+    console.log(cards[i]);
+    cards[i].style.display = "none";
+  }
   for (let i = 0; i < list.length; i++) {
     const product = list[i];
     const cardElement = createCardElement(product.id, product.img, product.alt, product.title, product.shortDescription);
@@ -54,4 +59,38 @@ function generateListHeadphones(list){
   return productListElementHeadphones;
 }
 
+
 generateListHeadphones(productListHeadphones);
+
+
+
+
+function searchByInput(){
+  const input = document.getElementById('search');
+  // converteste toate caracterele mari in caractere mici
+  // ProducT => product
+  const searchText = input.value.toLowerCase();
+
+  const filterList = productListHeadphones.filter((product) =>{
+      const lowerLetters = product.title.toLowerCase();
+      const price = product.price + '';
+
+      return lowerLetters.includes(searchText) || price.includes(searchText);
+  });
+
+  generateListHeadphones(filterList, 0);
+}
+
+const searchButton = document.getElementById('searchButton');
+searchButton.addEventListener('click', () =>{
+    searchByInput()
+})
+
+generateListHeadphones(productListHeadphones, 0);
+
+const input = document.getElementById('search');
+input.addEventListener('keypress', (e) =>{
+    if(e.code === 'Enter'){
+        searchByInput()
+    }
+})

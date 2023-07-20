@@ -95,52 +95,70 @@ generateListEarphones()
 
 const cart = [];
 localStorage.setItem('cart', JSON.stringify(cart));
+localStorage.setItem('counter', '0');
 
-function logOut() {
-  const logStatus = localStorage.getItem('esteLogat');
-  if (logStatus == '1') {
-    const userName=localStorage.getItem('userLogat');
-    const logout = document.createElement('button');
-    const anchor = document.createElement('a');
-    const logBtn=document.querySelector('.logBtn');
-    const txt=document.createElement('p');
 
-    txt.classList.add('welcomeTxt');
-    txt.innerText=`welcome,${userName.split("@")[0]}`;
-    anchor.href = 'logout.html';
-    logout.appendChild(anchor);
-    logout.classList.add('logout');
-    anchor.innerText = 'LogOut';
-    logBtn.appendChild(txt);
-    logBtn.appendChild(logout);
-    
-  } 
-  localStorage.setItem('esteLogat', '0');
+
+
+
+
+
+function createButtons() {
+
+
+  const logBtn = document.querySelector('.logBtn');
+  const login = document.createElement('span');
+  const logout = document.createElement('span');
+
+  const userName = localStorage.getItem('userLogat');
+  const logoutBtn = document.createElement('button');
+  const anchor = document.createElement('a');
+  const txt = document.createElement('p');
+  txt.classList.add('welcomeTxt');
+  txt.innerText = `Welcome, ${userName.split("@")[0]}`;
+  anchor.href = 'logout.html';
+  logoutBtn.appendChild(anchor);
+  logoutBtn.classList.add('logout');
+  anchor.innerText = 'LogOut';
+  logout.appendChild(txt);
+  logout.appendChild(logoutBtn);
+
+
+  const loginBtn = document.createElement('button');
+  const anchor1 = document.createElement('a');
+  anchor1.href = 'login.html';
+  loginBtn.appendChild(anchor1);
+  loginBtn.classList.add('login');
+  anchor1.innerText = 'Login';
+  login.appendChild(loginBtn);
+
+  logBtn.appendChild(login);
+  logBtn.appendChild(logout);
 
 }
 
-logOut();
+createButtons();
 
-const logOutBtn=document.querySelector('.logout');
+const logOutBtn = document.querySelector('.logout');
 
-logOutBtn.addEventListener('click', (e)=>{
+logOutBtn.addEventListener('click', (e) => {
   e.preventDefault();
-  const logStatus = localStorage.getItem('esteLogat');
-  document.querySelector('.logout').style.display = "none";
-  document.querySelector('.welcomeTxt').style.display = "none";
-if(logStatus == '0'){
-  const login = document.createElement('button');
-  const anchor = document.createElement('a');
-  const logBtn=document.querySelector('.logBtn');
-  anchor.href = 'login.html';
-  login.appendChild(anchor);
-  login.classList.add('login');
-  anchor.innerText = 'Login';
-  logBtn.appendChild(login);
-  
-  }
-
-  localStorage.setItem('esteLogat', '1');
+  localStorage.setItem('esteLogat', '0');
+  checkStatusLogin()
 })
 
+function checkStatusLogin() {
+  const logStatus = localStorage.getItem('esteLogat');
+  if (logStatus == '0') {
+    document.querySelector('.logout').style.display = "none";
+    document.querySelector('.welcomeTxt').style.display = "none";
+    document.querySelector('.login').style.display = "block";
+  }
+  else {
+    document.querySelector('.login').style.display = "none";
+    document.querySelector('.logout').style.display = "block";
+    document.querySelector('.welcomeTxt').style.display = "block";
+  }
+}
 
+checkStatusLogin();

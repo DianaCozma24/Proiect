@@ -18,15 +18,17 @@
       gap: 30px;
       padding: 30px;
 
-      img.imgHmg{
+      img.imgHmg {
         width: 10px;
         height: 10px;
       }
-      img.imgLogo{
+
+      img.imgLogo {
         width: 90px;
         height: 20px;
       }
-      img.imgCart{
+
+      img.imgCart {
         width: 15px;
         height: 15px;
       }
@@ -50,11 +52,11 @@
     }
 
     .signin {
-      position: relative;
+
       color: $white;
       font-family: 'Manrope';
       font-size: 9px;
-      right: 5px;
+      right: 30px;
 
       a {
         color: white;
@@ -63,29 +65,41 @@
     }
 
     .logBtn {
-      
+
       font-family: 'Manrope';
       color: $white;
       font-size: 9px;
-     right: 15px;
+      right: 15px;
 
-     .logout{
-      font-size: 9px;
-      font-family: 'Manrope';
-     left: 10%;
-      position: relative;
-     }
+      .logout {
+        font-size: 8px;
+        font-family: 'Manrope';
+        left: 305px;
+        top: 35px;
+        position: absolute;
+        z-index: 2;
+      }
+
       a {
         color: white;
         text-decoration: none;
       }
-      .welcomeTxt{
+
+      .welcomeTxt {
         font-family: 'Manrope';
         color: $white;
         font-size: 9px;
-        left: 65%;
-        top: 20%;
+        left: 230px;
+        top: 1px;
       }
+    }
+
+    .login {
+      font-family: 'Manrope';
+      font-size: 9px;
+      position: absolute;
+      left: 310px;
+      top: 35px;
     }
 
     hr {

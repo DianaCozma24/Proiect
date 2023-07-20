@@ -1,590 +1,595 @@
 @import "typo";
 @import "colors";
 
-.hero {
-  background-color: $black;
-  background-position: center;
-  background-size: cover;
-  width: 375px;
-  height: 90px;
-  position: relative;
 
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
-    gap: 30px;
-  }
+@media screen and (min-width: 350px) {
+  .hero {
+    background-color: $black;
+    background-position: center;
+    background-size: cover;
+    width: 375px;
+    height: 90px;
+    position: relative;
 
-  nav {
-    display: none;
-  }
-
-  button {
-    background-color: transparent;
-    border: none;
-    left: 80%;
-  }
-  p{
-    top: 10px;
-    left: 80%;
-    font-size: 10px;
-    color: $white;
-  }
-
-}
-
-.goBack {
-  text-align: left;
-  width: 80px;
-  height: 25px;
-  left: 24px;
-  top: 106px;
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 25px;
-  color: #000000;
-  mix-blend-mode: normal;
-  opacity: 0.5;
-  padding-left: 25px;
-}
-
-.product {
-  width: 327px;
-  height: 724px;
-  padding-left: 24px;
-
-
-  .img-container {
-
-    img {
-      width: 327px;
-      height: 327px;
-      border-radius: 8px;
-      margin-top: 20px;
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px;
+      gap: 30px;
     }
+
+    nav {
+      display: none;
+    }
+
+    button {
+      background-color: transparent;
+      border: none;
+      left: 80%;
+    }
+
+    p {
+      top: 10px;
+      left: 80%;
+      font-size: 10px;
+      color: $white;
+    }
+
   }
 
-  .title {
-    width: 327px;
-    height: 76px;
+  .goBack {
+    text-align: left;
+    width: 80px;
+    height: 25px;
+    left: 24px;
+    top: 106px;
     font-family: 'Manrope';
     font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 38px;
-    text-align: left;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: $black;
-    margin-top: 24px;
-  }
-
-  .details {
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 25px;
-    text-align: left;
-    color: $black;
-    mix-blend-mode: normal;
-    opacity: 0.5;
-    margin-top: 24px;
-    padding-bottom: 24px;
-  }
-
-  .price {
-    color: $black;
-    font-size: 15px;
-    font-family: Manrope;
-    font-weight: 500;
-    line-height: 25px;
-  }
-
-
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  padding-left: 24px;
-  cursor: pointer;
-
-  .wrapper {
-    width: 120px;
-    height: 48px;
-    background-color: #F1F1F1;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    text-align: center;
-   
-    
-
-    .minus .plus {
-      color: #979797;
-      font-family: 'Manrope';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 13px;
-      line-height: 18px;
-      text-align: center;
-      letter-spacing: 1px;
-    }
-
-    .num {
-      color: $black;
-      font-family: 'Manrope';
-      font-style: normal;
-      font-weight: 900;
-      font-size: 13px;
-      line-height: 18px;
-    }
-  }
-
-  .addToCart {
-    background-color: $orange;
-    color: $white;
-    width: 160px;
-    height: 48px;
-    border: 1px solid $orange;
-    cursor: pointer;
-  }
-}
-
-
-.features {
-  display: block;
-  flex-direction: column;
-  position: relative;
-  top: 100px;
-  padding-left: 24px;
-
-
-
-  h3 {
-    width: 327px;
-    height: 36px;
-    left: 24px;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
-    letter-spacing: 0.857143px;
-    text-transform: uppercase;
-    color: $black;
-
-
-  }
-
-  p {
-    top: 1058px;
-    width: 327px;
-    height: 475px;
-    left: 24px;
     font-weight: 500;
     font-size: 15px;
     line-height: 25px;
     color: #000000;
     mix-blend-mode: normal;
     opacity: 0.5;
-    text-align: left;
-  }
-}
-
-.inTheBox {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  width: 327px;
-  height: 217px;
-  top: 200px;
-  left: 24px;
-
-  h3 {
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 36px;
-    letter-spacing: 0.857143px;
-    text-transform: uppercase;
-    color: $black;
+    padding-left: 25px;
   }
 
-  p {
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 2px;
-    color: $black;
-    mix-blend-mode: normal;
-    opacity: 0.5
-  }
-
-  span {
-    font-weight: bolder;
-    font-size: 15px;
-    line-height: 2px;
-    color: $orange;
-    font-weight: 900;
-
-  }
-}
-
-.prodImg {
-  width: 327px;
-  height: 756;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  position: relative;
-  top: 393px;
-  padding-left: 24px;
-
-  .prodImg1 {
-    background-image: url('../Audiophile/assets/product-xx99-mark-one-headphones/mobile/image-gallery-1.jpg');
+  .product {
     width: 327px;
-    height: 174px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
+    height: 724px;
+    padding-left: 24px;
 
-  }
 
-  .prodImg2 {
-    background-image: url('../Audiophile/assets/product-xx99-mark-one-headphones/mobile/image-gallery-2.jpg');
-    width: 327px;
-    height: 174px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
+    .img-container {
 
-  }
-
-  .prodImg3 {
-    background-image: url('../Audiophile/assets/product-xx99-mark-one-headphones/mobile/image-gallery-3.jpg');
-    width: 327px;
-    height: 368px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-
-  }
-}
-
-.mayAlsoLike {
-  width: 327px;
-  height: 983px;
-  position: relative;
-  top: 500px;
-  padding-left: 24px;
-
-  h3 {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
-    text-align: center;
-    letter-spacing: 0.857143px;
-    text-transform: uppercase;
-    color: $black;
-
-  }
-
-  .prod1 {
-    background-color: #F1F1F1;
-    align-items: center;
-    border-radius: 8px;
-    height: 120px;
-
-    img {
-      align-items: center;
-      position: relative;
-      left: 130px;
-      top: 12px;
+      img {
+        width: 327px;
+        height: 327px;
+        border-radius: 8px;
+        margin-top: 20px;
+      }
     }
 
-
-  }
-
-  .prod2 {
-    background-color: #F1F1F1;
-    align-items: center;
-    border-radius: 8px;
-    height: 120px;
-    margin-top: 50px;
-
-    img {
-      align-items: center;
-      position: relative;
-      left: 130px;
-      top: 12px;
-    }
-
-  }
-
-  .prod3 {
-    background-color: #F1F1F1;
-    align-items: center;
-    border-radius: 8px;
-    height: 120px;
-    margin-top: 50px;
-
-    img {
-      align-items: center;
-      position: relative;
-      left: 130px;
-      top: 12px;
-    }
-  }
-
-  h4 {
-
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 33px;
-
-
-  }
-
-  button {
-    background-color: $orange;
-    color: $white;
-    width: 160px;
-    height: 48px;
-    left: 84px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 33px;
-    position: relative;
-    align-items: center;
-    border: 1px solid $orange;
-
-  }
-}
-
-.products {
-  position: absolute;
-  top: 3905px;
-  padding-top: 60px;
-  padding-bottom: 40px;
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 80px;
-    margin-left: 24px;
-
-  }
-
-  .articleList {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    align-items: center;
-  }
-
-  img {
-
-    position: relative;
-    left: 124px;
-    transform: translateY(-60%);
-    z-index: 2;
-    filter: drop-shadow(0px 10px 10px black);
-  }
-
-  article {
-    height: 165px;
-    width: 327px;
-    left: 0px;
-    top: 52px;
-    border-radius: 8px;
-    background-color: #F1F1F1;
-    display: flex;
-
-    // .innerContainer {
-    //   display: flex;
-    //   flex-direction: column;
-    //   align-items: center;
-    //   gap: 15px;
-
-    h3 {
-      text-transform: uppercase;
-      color: $black;
-      font-weight: 700;
-      font-size: 15px;
-      line-height: 20px;
-      text-align: center;
-      letter-spacing: 1.07143px;
-      left: 133px;
-
-    }
-
-    button {
-
-      height: 18px;
-      left: 135px;
-      top: 177px;
-
+    .title {
+      width: 327px;
+      height: 76px;
       font-family: 'Manrope';
       font-style: normal;
       font-weight: 700;
-      font-size: 13px;
-      line-height: 18px;
-      border: none;
+      font-size: 28px;
+      line-height: 38px;
+      text-align: left;
       letter-spacing: 1px;
       text-transform: uppercase;
       color: $black;
+      margin-top: 24px;
+    }
+
+    .details {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 25px;
+      text-align: left;
+      color: $black;
       mix-blend-mode: normal;
       opacity: 0.5;
-
+      margin-top: 24px;
+      padding-bottom: 24px;
     }
 
-    .arrow {
-      color: $orange;
-      font-size: 18px;
+    .price {
+      color: $black;
+      font-size: 15px;
+      font-family: Manrope;
+      font-weight: 500;
+      line-height: 25px;
     }
 
-    // }
+
   }
 
-}
-
-.bestAudio {
-  display: block;
-  position: absolute;
-  padding-top: 40px;
-  top: 4709px;
-  left: 24px;
-
-
-  .imgBackground {
-
-    background-image: url("../Audiophile/assets/men.png");
+  .container {
     display: flex;
-    border: 1px solid $black;
-    border-radius: 8px;
-    width: 327px;
-    height: 300px;
+    flex-direction: row;
+    gap: 10px;
+    padding-left: 24px;
+    cursor: pointer;
+
+    .wrapper {
+      width: 120px;
+      height: 48px;
+      background-color: #F1F1F1;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      text-align: center;
+
+
+
+      .minus .plus {
+        color: #979797;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: 1px;
+      }
+
+      .num {
+        color: $black;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 13px;
+        line-height: 18px;
+      }
+    }
+
+    .addToCart {
+      background-color: $orange;
+      color: $white;
+      width: 160px;
+      height: 48px;
+      border: 1px solid $orange;
+      cursor: pointer;
+    }
   }
 
-  .innerContainer {
-    display: flex;
 
-    top: 3925px;
+  .features {
+    display: block;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    padding-left: 24px;
+
+
 
     h3 {
-      position: absolute;
-      height: 76px;
-      left: 0%;
-      right: 0%;
-      top: calc(100% - 76px/2 + 29px);
+      width: 327px;
+      height: 36px;
+      left: 24px;
       font-weight: 700;
-      font-size: 28px;
-      line-height: 38px;
-      text-align: center;
-      letter-spacing: 1px;
+      font-size: 24px;
+      line-height: 36px;
+      letter-spacing: 0.857143px;
+      text-transform: uppercase;
+      color: $black;
+
+
+    }
+
+    p {
+      top: 1058px;
+      width: 327px;
+      height: 475px;
+      left: 24px;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 25px;
+      color: #000000;
+      mix-blend-mode: normal;
+      opacity: 0.5;
+      text-align: left;
+    }
+  }
+
+  .inTheBox {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 327px;
+    height: 217px;
+    top: 200px;
+    left: 24px;
+
+    h3 {
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 36px;
+      letter-spacing: 0.857143px;
       text-transform: uppercase;
       color: $black;
     }
 
     p {
-      position: absolute;
-      left: 0%;
-      right: 0%;
-      top: calc(100% + 110px/2 + 29px);
-      bottom: 0%;
       font-weight: 500;
       font-size: 15px;
-      line-height: 25px;
-      text-align: center;
+      line-height: 2px;
       color: $black;
       mix-blend-mode: normal;
-      opacity: 0.5;
-      margin-top: 30px;
+      opacity: 0.5
+    }
+
+    span {
+      font-weight: bolder;
+      font-size: 15px;
+      line-height: 2px;
+      color: $orange;
+      font-weight: 900;
+
     }
   }
 
-
-}
-
-footer {
-  position: absolute;
-  top: 5526px;
-
-
-  .container {
-    background-color: $black;
-    width: 375px;
-    height: 654px;
+  .prodImg {
+    width: 327px;
+    height: 756;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 40px;
-    padding-top: 52px;
+    gap: 20px;
+    position: relative;
+    top: 393px;
+    padding-left: 24px;
+
+    .prodImg1 {
+      background-image: url('../Audiophile/assets/product-xx99-mark-one-headphones/mobile/image-gallery-1.jpg');
+      width: 327px;
+      height: 174px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 10px;
+
+    }
+
+    .prodImg2 {
+      background-image: url('../Audiophile/assets/product-xx99-mark-one-headphones/mobile/image-gallery-2.jpg');
+      width: 327px;
+      height: 174px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 10px;
+
+    }
+
+    .prodImg3 {
+      background-image: url('../Audiophile/assets/product-xx99-mark-one-headphones/mobile/image-gallery-3.jpg');
+      width: 327px;
+      height: 368px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 10px;
+
+    }
+  }
+
+  .mayAlsoLike {
+    width: 327px;
+    height: 983px;
+    position: relative;
+    top: 500px;
+    padding-left: 24px;
+
+    h3 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 36px;
+      text-align: center;
+      letter-spacing: 0.857143px;
+      text-transform: uppercase;
+      color: $black;
+
+    }
+
+    .prod1 {
+      background-color: #F1F1F1;
+      align-items: center;
+      border-radius: 8px;
+      height: 120px;
+
+      img {
+        align-items: center;
+        position: relative;
+        left: 130px;
+        top: 12px;
+      }
+
+
+    }
+
+    .prod2 {
+      background-color: #F1F1F1;
+      align-items: center;
+      border-radius: 8px;
+      height: 120px;
+      margin-top: 50px;
+
+      img {
+        align-items: center;
+        position: relative;
+        left: 130px;
+        top: 12px;
+      }
+
+    }
+
+    .prod3 {
+      background-color: #F1F1F1;
+      align-items: center;
+      border-radius: 8px;
+      height: 120px;
+      margin-top: 50px;
+
+      img {
+        align-items: center;
+        position: relative;
+        left: 130px;
+        top: 12px;
+      }
+    }
+
+    h4 {
+
+      position: relative;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 33px;
+
+
+    }
+
+    button {
+      background-color: $orange;
+      color: $white;
+      width: 160px;
+      height: 48px;
+      left: 84px;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 33px;
+      position: relative;
+      align-items: center;
+      border: 1px solid $orange;
+
+    }
+  }
+
+  .products {
+    position: absolute;
+    top: 3905px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 80px;
+      margin-left: 24px;
+
+    }
+
+    .articleList {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      align-items: center;
+    }
+
+    img {
+
+      position: relative;
+      left: 124px;
+      transform: translateY(-60%);
+      z-index: 2;
+      filter: drop-shadow(0px 10px 10px black);
+    }
+
+    article {
+      height: 165px;
+      width: 327px;
+      left: 0px;
+      top: 52px;
+      border-radius: 8px;
+      background-color: #F1F1F1;
+      display: flex;
+
+      // .innerContainer {
+      //   display: flex;
+      //   flex-direction: column;
+      //   align-items: center;
+      //   gap: 15px;
+
+      h3 {
+        text-transform: uppercase;
+        color: $black;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 1.07143px;
+        left: 133px;
+
+      }
+
+      button {
+
+        height: 18px;
+        left: 135px;
+        top: 177px;
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 18px;
+        border: none;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $black;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+
+      }
+
+      .arrow {
+        color: $orange;
+        font-size: 18px;
+      }
+
+      // }
+    }
 
   }
 
-  nav {
-    ul {
-      flex-direction: column;
-      list-style: none;
-      padding-top: 48px;
-      display: inline-block;
-      left: 134px;
-      align-items: center;
+  .bestAudio {
+    display: block;
+    position: absolute;
+    padding-top: 40px;
+    top: 4709px;
+    left: 24px;
 
 
-      li {
+
+    .imgBackground {
+
+      background-image: url("../Audiophile/assets/men.png");
+      display: flex;
+      border: 1px solid $black;
+      border-radius: 8px;
+      width: 327px;
+      height: 300px;
+    }
+
+    .innerContainer {
+      display: flex;
+
+      top: 3925px;
+
+      h3 {
+        position: absolute;
+        height: 76px;
+        left: 0%;
+        right: 0%;
+        top: calc(100% - 76px/2 + 29px);
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 38px;
         text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $black;
+      }
+
+      p {
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        top: calc(100% + 110px/2 + 29px);
+        bottom: 0%;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: $black;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+        margin-top: 30px;
+      }
+    }
 
 
-        a {
+  }
+
+  footer {
+    position: absolute;
+    top: 5526px;
+
+
+    .container {
+      background-color: $black;
+      width: 375px;
+      height: 654px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 40px;
+      padding-top: 52px;
+
+    }
+
+    nav {
+      ul {
+        flex-direction: column;
+        list-style: none;
+        padding-top: 48px;
+        display: inline-block;
+        left: 134px;
+        align-items: center;
+
+
+        li {
           text-align: center;
-          justify-content: center;
-          font-family: 'Manrope';
-          font-style: normal;
-          font-weight: 700;
-          font-size: 13px;
-          line-height: 25px;
-          letter-spacing: 2px;
-          text-transform: uppercase;
-          color: $white;
 
+
+          a {
+            text-align: center;
+            justify-content: center;
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 25px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: $white;
+
+          }
         }
       }
     }
+
+    p {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 25px;
+      /* or 167% */
+
+      text-align: center;
+
+      color: $white;
+
+      mix-blend-mode: normal;
+      opacity: 0.5;
+    }
+
+    .social {
+      margin-top: 15px;
+      width: 150px;
+      display: flex;
+      gap: 15px;
+
+
+    }
+
   }
-
-  p {
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 25px;
-    /* or 167% */
-
-    text-align: center;
-
-    color: $white;
-
-    mix-blend-mode: normal;
-    opacity: 0.5;
-  }
-
-  .social {
-    margin-top: 15px;
-    width: 150px;
-    display: flex;
-    gap: 15px;
-
-
-  }
-
 }
